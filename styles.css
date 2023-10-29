@@ -247,7 +247,7 @@ html, body {
 
 /* Hide scrollbar on hover */
 .left-side-section::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 .left-side-section::-webkit-scrollbar-thumb{
