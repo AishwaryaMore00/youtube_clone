@@ -1,0 +1,570 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #0f0f0f;
+    font-family: Roboto,Arial,sans-serif;
+   
+   
+}
+
+.top-header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    padding: 10px,2%;
+    justify-content: space-between;
+    position: static;
+    top: 0;
+    z-index: 10;
+   
+}
+
+.left-top-header {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.center-top-header {
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.right-top-header {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-section {
+    width: 100%;
+    height: 92%;
+    
+    display: flex;
+}
+.top-section, .middle-section, .bottom-section ,.bottom-fourth-section,.bottom-fifth-section{
+    flex: 1;
+   
+    border-bottom: 1px solid #333;
+    padding: 10px 10px ;
+    text-align: center;
+}
+.footer-section{
+    color: #AAAAAA;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-evenly;
+    gap: 10px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+.footer-bottom-line{
+    color: #717171;
+    font-size: 12px;
+}
+
+
+.right-side-section {
+    width: 83%;
+    height: 100%;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top-section {
+    height: 10%;
+    
+}
+
+.right-main-section {
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .top-header {
+        height: 20%;
+    }
+    
+    .left-top-header {
+        width: 30%;
+    }
+
+    .center-top-header {
+        width: 40%;
+    }
+
+    .right-top-header {
+        width: 30%;
+    }
+
+    .main-section {
+        height: 80%;
+    }
+
+    .left-side-section {
+        width: 100%;
+    }
+
+    .right-side-section {
+       width: 82;;
+
+    }
+}
+/* Existing styles remain unchanged */
+
+.hide-sidebar-icon, .search-icon, .mic-icon, .video-plus-icon, .notification-icon {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.website-logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.input-box {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.video-plus-icon:hover{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+.bell-icon:hover{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.user-profile-image {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-container{
+    display: flex;
+}
+.input-box{
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #0f0f0f;
+    border-color: rgb(76, 68, 68);
+    color: white;
+    width: 35rem;
+}
+.search{
+    position: relative;
+    right: 68px;;
+    background-color: #272626;
+    border: 1px solid #999;
+    border-color: rgb(76, 68, 68);
+    border: none;
+    width: 4.2rem;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.mic-div{
+    background-color: #272626;
+    display: flex;
+    align-items: center;
+    margin-left: -2.5rem;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+/* Existing styles remain unchanged */
+
+.left-side-section {
+    width: 18%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll; /* Add a vertical scrollbar */
+    scrollbar-width: thin; 
+    
+    
+}
+.left-side-section::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+/* Style the thumb (the draggable part) of the scrollbar */
+.left-side-section::-webkit-scrollbar-thumb {
+    background-color:none; 
+    border-radius: 10px; }
+    
+/* Style the track (the non-draggable part) of the scrollbar */
+.left-side-section::-webkit-scrollbar-track {
+    background-color: transparent 
+}
+
+/* Style the corner where horizontal and vertical scrollbars meet (if needed) */
+.left-side-section::-webkit-scrollbar-corner {
+    background-color:transparent;
+}
+
+/* Hide scrollbar buttons (arrows) */
+.left-side-section::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Hide scrollbar on hover */
+.left-side-section::-webkit-scrollbar:hover {
+    width: 10px;
+}
+
+.left-side-section::-webkit-scrollbar-thumb:hover{
+    background-color: #625f5f;
+}
+
+.list-of-items {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.single-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 8px;
+}
+.single-list-item img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /*margin-left: 20px;*/
+}
+
+.single-list-item:hover{
+    background-color: rgb(36, 34, 34);
+    border-radius: 10px;
+    padding: 10px ;
+    width: 12rem;
+    cursor: pointer;
+}
+
+.list-item-icon {
+    font-size: 18px;
+    color: #FFF;
+    /*margin-left: 20px;*/
+}
+
+.list-item-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    color: #faf4f4;
+    font-size: 14px;
+}
+/* Existing styles remain unchanged */
+
+.right-top-section {
+    background-color: #0f0f0f;
+    height:10%;
+    display: flex;
+    overflow-x: auto; /* Add horizontal scrollbar */
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+
+}
+
+
+/* Existing styles remain unchanged */
+
+.arrow-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.arrow-icon:hover {
+    color: #00cc00; /* Green on hover */
+}
+
+#left-arrow {
+    display: none;
+    margin-right: 80px;
+}
+
+#right-arrow {
+    margin-left: 10px;
+}
+
+/* Existing styles remain unchanged */
+
+.scrollable-tags {
+    overflow: hidden;
+    position: relative;
+}
+
+.list-of-tags {
+    white-space: nowrap;
+    overflow-x: scroll;/* Show horizontal scrollbar */
+    scrollbar-width: none; /* Hide standard scrollbar */
+   -ms-overflow-style: none; /* Hide IE scrollbar */
+   
+    scrollbar-width: none; /* Hide standard scrollbar */
+   -ms-overflow-style: none; /* Hide IE scrollbar*/ 
+  
+}
+
+.list-of-tags::-webkit-scrollbar{
+    width: 0.4rem; 
+    
+}
+.list-of-tags {
+    display: flex;
+    
+}
+
+.single-tag {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    padding: 8px 13px;
+    background-color:  #272626;
+    /*color: #D2CFCF;*/
+    color: #faf4f4;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-right: 10px;
+    border-radius: 7px;
+    height: 1rem;
+    cursor: pointer;
+}
+.single-tag:hover{
+    background-color:  #3b3939;
+}
+ .All-tag{
+    background-color:#cec6c6 ;
+    color: #272626;;
+ }
+.All-tag:hover{
+    background-color:#ecdfdf ;
+    }
+
+
+.right-main-section {
+    flex: 1;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; /* Add vertical scrollbar */
+    
+}
+.right-main-section::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+/* Style the thumb (the draggable part) of the scrollbar */
+.right-main-section::-webkit-scrollbar-thumb {
+    background-color: #625f5f;
+    border-radius: 10px; 
+}
+    
+/* Style the track (the non-draggable part) of the scrollbar */
+.right-main-section::-webkit-scrollbar-track {
+    background-color: transparent 
+}
+
+/* Style the corner where horizontal and vertical scrollbars meet (if needed) */
+.right-main-section::-webkit-scrollbar-corner {
+    background-color:transparent;
+}
+
+/* Hide scrollbar buttons (arrows) */
+.right-main-section::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Hide scrollbar on hover */
+.right-main-section::-webkit-scrollbar:hover {
+    width: 10px;
+    
+
+}
+.thumbnail-image {
+    position: relative;
+}
+
+.thumbnail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.timestamp {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: small;
+    background-color: #000000CC;
+    color: #fff;
+    border-radius: 5px;
+    padding:  3px 4px ;
+    cursor: pointer;
+}
+.left-side{
+    margin-bottom: 1px;
+}
+.left-side img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-side {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.video-title {
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 8px;;
+    /*color: #D2CFCF;*/
+    color: #faf4f4;
+}
+
+.channel-info {
+    font-size: 14px;
+    cursor: pointer;
+    color: #AAAAAA ;
+    
+}
+.channel-name{
+    margin-bottom: 5px;;
+    font-size: 14px;
+    
+}
+.channel-name i{
+    cursor: pointer;
+    color: #AAAAAA ; 
+    margin-left: 3px;;
+    
+}
+.video-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid with a minimum column width of 300px */
+    grid-gap: 4px; /* Gap between grid items */
+    align-items: start; /* Align items to the top of each grid cell */
+    width: 100%;
+    height: 100%;
+}
+  
+.single-video {
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */ /* Remove fixed height */
+    padding: 10px;
+}
+.about-video-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    align-items:flex-start;
+
+
+}
+.statistics {
+    display: flex;
+    align-items: center;
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.views-count {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.dot {
+    margin: 0 5px;
+    color: #AAAAAA;
+}
+
+.video-uploaded-time {
+    
+    color: #AAAAAA;
+    font-size: 14px;
+}
+.website-logo{
+    height: 20px;
+    width: 90px;
+}
+.logo-bar{
+    margin-left: 20px;
+}
+
+
+/* Initially hide hidden items */
+.hidden-item {
+    display: none;
+}
+/* Initially hide hidden items */
+.hidden-items {
+    display: none;
+    flex-direction: column; /* Change flex-direction to vertical */
+}
+.show-less {
+    display: none;
+}
+
+
+.left-side-section-headings{
+    margin-left: 2px;;
+    font-size: 17px;
+    font-weight: 550;
+    
+}
+
+
+
+
+
+
+
